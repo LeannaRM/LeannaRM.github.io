@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
 
-<span>{{ page.date | date: "%b %-d, %Y" }}</span>
+<div class="maincontent_container">
+	<h3 class="title title_singlearticle">{{ page.title }}</h3>
+	<h4 class="date date_singlearticle">{{ page.date | date: "%b %-d, %Y" }}</h4>
+	<div class="greyline"></div>
 
-{{ content }}
+	{{ content }}
 
-<a href="http://twitter.com/share?url={{ page.url | absolute_url }}">
-  Share this on Twitter!
-</a>
+	<div class="twittershare_container">
+		<span class="fa fa-twitter twittershare_bird"></span>
+		<p class="maincontent twittershare_note">If you liked this article and think others should read it, please 
+			<a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20article%20by%20Leanna McDonald!&url={{ page.url | absolute_url }}" class="twitter-share-button">share it on Twitter.</a>
+		</p>
+	</div>
+</div>

@@ -1,0 +1,61 @@
+.links_container {
+	background-color:rgb(230,230,230);
+	height: 50px;
+	display:flex;
+	align-items: center;
+	position:absolute;
+	top: 40px;
+	transition: top 1s;
+	width: 100%;
+	z-index: -1;
+}
+.links_containercenter {
+	width:100%;
+}
+.showlinks {
+	top: 93px;
+}
+
+.fa {
+	color:rgb(230,230,230);
+	font-size: 16px !important;
+}
+.fa-github {
+	font-size: 23px !important;
+	color: rgb(170, 170, 170);
+}
+.icon_container_twitter, .icon_container_rss, .icon_container_git{
+    border-radius: 50%;
+    margin: 5px;
+    height:20px;
+    width:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+}
+.icon_container_git {
+	background-color: rgb(230,230,230);
+	height: 20px;
+	width: 20px;
+}
+.icon_container_twitter, .icon_container_rss {
+	background-color: rgb(170, 170, 170);
+}
+.icon_container_twitter:hover {
+	background-color: #1da1f2;
+}
+.fa-github:hover {
+	color: black;
+}
+.icon_container_rss:hover {
+	background-color: orange;
+}
+
+.links {
+	color:rgb(64, 64, 64);
+	font-size: 9pt;
+	float:right;
+	margin: 10px 20px 10px 0;
+	text-decoration: none;
+}

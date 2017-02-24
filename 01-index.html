@@ -1,0 +1,22 @@
+---
+layout: default
+title: Homepage
+permalink: /
+---
+
+<div class="hero_image"></div>
+<div class="maincontent_container">
+	<h3 class="pagelabel pagelabel_recent">Recent Articles</h3>
+
+	{% for post in site.posts %}
+		<div class="greyline"></div>
+
+		<h4 class="date date_list">{{ post.date | date: "%b %-d, %Y" }}</h4>
+
+		<a href="{{ post.url }}" class="title_link">
+			<h4 class="title title_articlelist">{{ post.title }}</h4>
+		</a>
+		<p class="maincontent maincontent_intro">{{ post.excerpt }}</p>
+
+	{% endfor %}
+</div>

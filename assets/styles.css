@@ -1,3 +1,318 @@
-body{
-  background-color: grey;
+body {
+font-family: Open Sans,Helvetica Neue,sans-serif;
+margin: 0;
+padding: 0;	
 }
+.name, .links, .pagelabel {
+	text-transform: uppercase;
+}
+
+
+.header {
+	background-color: rgb(64, 64, 64);
+	color: rgb(230,230,230);
+	padding: 25px;
+	margin:0;
+	width:100%;
+}
+
+.fa-bars {
+	font-size: 20px !important;
+}
+.hamburger_container {
+	border: 2px solid rgb(230,230,230);;
+	border-radius: 5px;
+	float:right;
+	padding:5px;
+	margin: 2px 45px;
+}
+.hamburger_container:hover {
+	border-color: red;
+	cursor:pointer;
+}
+.name {
+    font-size: 13pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.name a {
+    text-decoration:none;
+}
+.name_title {
+    font-weight: 300;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: rgb(170, 170, 170);
+    margin: 0;
+}
+
+
+.navbar {
+	background-color:rgb(230,230,230);
+	height: 50px;
+	position:absolute;
+	top: 35px;
+	transition: top 1s;
+	width: 100%;
+	z-index: -1;
+	display:flex;
+	align-items: center;
+}
+.showlinks {
+	top: 87px;
+}
+
+.fa {
+	color:rgb(230,230,230);
+	font-size: 16px !important;
+}
+.icon_container_twitter, .icon_container_rss, .icon_container_git{
+    border-radius: 50%;
+    margin: 5px;
+    height:20px;
+    width:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_link {
+	float:left;
+}
+.fa-github {
+	font-size: 23px !important;
+	color: rgb(170, 170, 170);
+}
+.icon_container_git {
+	background-color: rgb(230,230,230);
+}
+.icon_container_twitter, .icon_container_rss {
+	background-color: rgb(170, 170, 170);
+}
+
+.icon_container_twitter:hover {
+	background-color: #1da1f2;
+}
+.fa-github:hover {
+	color: black;
+}
+.icon_container_rss:hover {
+	background-color: orange;
+}
+
+.navbar .container a {
+	text-decoration: none;
+}
+.links {
+	color:rgb(120, 120, 120);
+	font-size: 9pt;
+	margin: 10px 15px 10px 0;
+	float:right;
+}
+.links:hover, .title_articlelist:hover{
+	color:red;
+}
+
+.container {
+	width:100%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons_container, .links_container{
+	display:flex;
+	align-items: center;
+}
+/*.icon_container {
+	float:left;
+}
+.links_container {
+	float:right;
+}*/
+
+
+
+.cleardiv {
+	clear:both;
+}
+
+.maincontent_container {
+	color: rgb(170, 170, 170);
+	margin: 15px;
+}
+
+.greyline {
+	background-color: rgb(230, 230, 230);
+	height:1px;
+}
+
+a {
+	color: inherit;
+	cursor:pointer;
+}
+
+ul {
+	list-style-type: square;
+}
+
+li p {
+	margin:0;
+}
+
+.pagelabel {
+    font-size: 9pt;
+    letter-spacing: 3px;
+    margin: 35px 0 20px 0;
+    font-weight: 400;
+}
+
+.date {
+    font-size: 9.5pt;
+    font-weight: 300;
+    margin: 0 0 25px 0;
+    letter-spacing: 1px;
+}
+.date_list {
+	font-size: 8.5pt;
+	margin: 25px 0;
+}
+
+.title {
+	color: rgb(64, 64, 64);
+    font-weight: 400;
+    font-size: 20pt;
+    margin: 25px 0 15px 0;
+}
+.subtitle {
+	font-size: 18pt;
+	margin: 25px 0;
+}
+.title_articlelist {
+	margin: 0;
+}
+.title_link {
+	text-decoration: none;	
+}
+.title_index {
+	font-size:14.5pt;
+}
+.title_footnote {
+	font-size: 13pt;
+}
+
+.maincontent {
+    font-size: 11.5pt;
+    font-weight: 300;
+    margin: 0;
+    color: rgb(64, 64, 64);
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    padding: 10px 0 10px 0;
+    z-index: -2;
+}
+.maincontent_singlearticle:last-of-type {
+	margin: 0px 0 5px 0;;
+}
+.maincontent_aboutlinks {
+	padding: 0;
+}
+.maincontent_articlelinks {
+	padding: 2px 0;
+}
+.aboutlink, .articlelink {
+	color: rgb(110,110,110);
+}
+.maincontent_articlelinks span {
+	font-style: italic;
+}
+.maincontent_intro {
+	margin: 5px 0 25px 0;
+    color: rgb(170,170,170);
+    font-size: 10pt;
+}
+.maincontent_footnote {
+	font-size: 9pt;
+	margin: 5px 0;
+}
+
+.twittershare_container {
+	padding:20px;
+	background-color: rgb(230, 230, 230);
+}
+.twittershare_bird {
+	color: #1da1f2;
+	font-size: 20pt !important;
+	float:left;
+	margin: 10px 10px 5px 0;
+}
+.twittershare_note {
+	letter-spacing: 0;
+    margin: 0;
+	color: rgb(120,120,120);
+}
+
+.note {
+	background-color: rgb(230, 230, 230);
+	position:relative;
+    left: -15px;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+}
+.note span {
+	font-weight: 400;
+}
+
+.hero_image {
+	background-image: url("./omaha_skyline.jpg");
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding-top: 66.286%;
+    position: relative;
+    z-index: -2;
+}
+
+
+@media (min-width: 570px) {
+	.hero_image {
+		background-position-y: 15%;
+		height: 377.82px;
+		padding-top: 0;
+	}
+	.header {
+		background-color: rgb(230,230,230);
+		color: rgb(64, 64, 64);
+	}
+	.hamburger_container {
+		display:none;
+	}
+	.navbar {
+		top:0;
+		z-index:0;
+		background-color:rgba(0,0,0,0);
+		text-align: center;
+		transition:none;
+	}
+	.icons_container {
+		float:none;
+		display:block;
+	}
+	.icon_link {
+		display: inline-block;
+		float:none;
+		position: relative;
+		top:10px;
+	}
+	.container {
+		display:block;
+	}
+	.links_container {
+		position: absolute;
+		right:0;
+		top:20px;
+	}
+
+
+}
+

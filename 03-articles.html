@@ -1,0 +1,28 @@
+---
+layout: default
+title: Articles
+permalink: /articles/
+---
+
+<div class="maincontent_container">
+  <h3 class="pagelabel pagelabel_articles">Articles</h3>
+  <div class="greyline"></div>
+
+  {% for post in site.posts %}
+    {% assign currentDate = post.date | date: "%B" %}
+
+    {% if currentDate != myDate %}
+      {% unless forloop.first %}</ul>{% endunless %}
+
+      <h3 class="title title_index">{{ currentDate }}</h3>
+      <ul>
+        {% assign myDate = currentDate %}
+    {% endif %}
+    <li class="maincontent maincontent_articlelinks">
+      <a href="{{ post.url }}" class="articlelink">{{ post.title }}</a>
+      <span> ({{ post.date | date: "%B %-d, %Y" }})</span>
+    </li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+
+</div>
