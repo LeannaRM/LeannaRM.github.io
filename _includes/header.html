@@ -10,15 +10,6 @@
 
   <div class="navbar">
     <div class="container">
-      <div class="links_container">
-        {% for the_page in site.pages %}
-          {% if the_page.title %}
-            <a href="{{ the_page.url }}" class="links">{{ the_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-        <div class="cleardiv"></div>
-      </div>
-      <div class="cleardiv"></div>
       <div class="icons_container">
         <a href="https://twitter.com/leannarmcdonald" class="icon_link">
           <div class="icon_container_twitter">
@@ -40,7 +31,14 @@
         <div class="cleardiv"></div>
       </div>
 
-
+      <div class="links_container">
+        {% for the_page in site.pages %}
+          {% if the_page.title %}
+            <a href="{{ the_page.url }}" class="links">{{ the_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+        <div class="cleardiv"></div>
+      </div>
     </div>
   </div>
 </header>
