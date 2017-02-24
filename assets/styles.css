@@ -291,7 +291,7 @@ li p {
 	}
 	.navbar {
 		top:0;
-		z-index:0;
+		z-index: 3;
 		background-color:rgba(0,0,0,0);
 		text-align: center;
 		transition:none;
@@ -337,6 +337,9 @@ li p {
 	.maincontent_container {
 		width:540px;
 		margin:auto;
+	}
+	.pagelabel {
+		text-align:center;
 	}
 }
 
