@@ -265,12 +265,12 @@ li p {
 }
 
 .hero_image {
-	background-image: url("./omaha_skyline.jpg");
+	background-image: url("./notredame.jpg");
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-top: 66.286%;
+    padding-top: 66.6504%;
     position: relative;
 /*    z-index: -2;*/
 }
@@ -279,7 +279,7 @@ li p {
 @media (min-width: 570px) {
 	.hero_image {
 		background-position-y: 15%;
-		height: 377.82px;
+		height: 379.907px;
 		padding-top: 0;
 	}
 	.header {
