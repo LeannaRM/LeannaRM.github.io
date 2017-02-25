@@ -9,8 +9,7 @@ permalink: /
 	<h3 class="pagelabel pagelabel_recent">Recent Articles</h3>
 
 	{% for post in site.posts %}
-		<div class="greyline"></div>
-
+		<hr>
 		<h4 class="date date_list">{{ post.date | date: "%b %-d, %Y" }}</h4>
 
 		<a href="{{ post.url }}" class="title_link">

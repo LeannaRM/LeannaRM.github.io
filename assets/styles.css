@@ -112,7 +112,7 @@ padding: 0;
 	float:right;
 }
 .links:hover, .title_articlelist:hover{
-	color:red;
+	color:rgb(235, 60, 0);
 }
 
 .container {
@@ -143,9 +143,11 @@ padding: 0;
 	margin: 15px;
 }
 
-.greyline {
-	background-color: rgb(230, 230, 230);
+hr {
+	/*background-color: rgb(230, 230, 230);*/
+	background-color: rgba(44, 119, 50, 0.5);
 	height:1px;
+	border-style: none;
 }
 
 a {
