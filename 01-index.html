@@ -10,12 +10,32 @@ permalink: /
 
 	{% for post in site.posts %}
 		<hr>
-		<h4 class="date date_list">{{ post.date | date: "%b %-d, %Y" }}</h4>
+		<div class="post_container">
+			{% if post.index_image == null %}
+				<div class="index_post_container">
+					<h4 class="date date_list">{{ post.date | date: "%b %-d, %Y" }}</h4>
 
-		<a href="{{ post.url }}" class="title_link">
-			<h4 class="title title_articlelist">{{ post.title }}</h4>
-		</a>
-		<p class="maincontent maincontent_intro">{{ post.excerpt }}</p>
+					<a href="{{ post.url }}" class="title_link">
+						<h4 class="title title_articlelist">{{ post.title }}</h4>
+					</a>
+					<p class="maincontent maincontent_intro">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+				</div>
+			{% else %}
+				<div class="index_image_container">
+					<div class="index_image" style="background-image:url('{{ post.index_image }}')">
+					</div>
+				</div>
+				<div class="index_post_container">
+					<h4 class="date date_list">{{ post.date | date: "%b %-d, %Y" }}</h4>
+
+					<a href="{{ post.url }}" class="title_link">
+						<h4 class="title title_articlelist">{{ post.title }}</h4>
+					</a>
+					<p class="maincontent maincontent_intro">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+				</div>
+				<div class="cleardiv"></div>
+			{% endif %}
+		</div>
 
 	{% endfor %}
 </div>
