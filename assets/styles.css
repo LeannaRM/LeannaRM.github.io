@@ -45,7 +45,8 @@ padding: 0;
     font-weight: 300;
     font-size: 9pt;
     letter-spacing: 2px;
-    color: rgb(170, 170, 170);
+    /*color: rgb(170, 170, 170);*/
+    color: #D4A99B;
     margin: 0;
 }
 
@@ -83,13 +84,15 @@ padding: 0;
 }
 .fa-github {
 	font-size: 23px !important;
-	color: rgb(170, 170, 170);
+	/*color: rgb(170, 170, 170);*/
+	color:#66996A;
 }
 .icon_container_git {
 	background-color: rgb(230,230,230);
 }
 .icon_container_twitter, .icon_container_rss {
-	background-color: rgb(170, 170, 170);
+	/*background-color: rgb(170, 170, 170);*/
+	background-color: #66996A;
 }
 
 .icon_container_twitter:hover {
@@ -106,7 +109,9 @@ padding: 0;
 	text-decoration: none;
 }
 .links {
-	color:rgb(120, 120, 120);
+	/*color:rgb(120, 120, 120);*/
+	/*color: #521400;*/
+	color: #A45E46;
 	font-size: 9pt;
 	margin: 10px 15px 10px 0;
 	float:right;
@@ -168,6 +173,7 @@ li p {
     letter-spacing: 3px;
     margin: 35px 0 20px 0;
     font-weight: 400;
+    color: #91B694;
 }
 
 .date {
@@ -182,7 +188,8 @@ li p {
 }
 
 .title {
-	color: rgb(64, 64, 64);
+	/*color: rgb(64, 64, 64);*/
+	color: #A45E46;
     font-weight: 400;
     font-size: 20pt;
     margin: 25px 0 15px 0;
@@ -265,16 +272,22 @@ li p {
 .note span {
 	font-weight: 400;
 }
-
+.about_image {
+	background-image: url("./aboutphoto.jpg");
+	padding-top: 75%;
+}
 .hero_image {
 	background-image: url("./notredame.jpg");
+    padding-top: 66.6504%;
+}
+.hero_image, .about_image{
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-top: 66.6504%;
     position: relative;
 }
+
 .index_image_container {
 	display:none;
 	width: 200px;
@@ -301,6 +314,11 @@ li p {
 	.hero_image {
 		background-position-y: 45%;
 		height: 379.907px;
+		padding-top: 0;
+	}
+	.about_image {
+		background-position-y: 50%;
+		height: 427.5px;
 		padding-top: 0;
 	}
 }
@@ -341,7 +359,8 @@ li p {
 	.name {
 		font-weight: 400;
     	letter-spacing: 0.5px;
-    	color: rgb(120,120,120);
+    	/*color: rgb(120,120,120);*/
+    	color: #A45E46;
 	}
 	.name_title {
 		font-weight: 400;
@@ -352,10 +371,12 @@ li p {
 		font-weight: 500;
 	}
 	.icon_container_twitter, .icon_container_rss {
-		background-color: rgb(200, 200, 200);
+		/*background-color: rgb(200, 200, 200);*/
+		background-color: #91B694;
 	}
 	.fa-github {
 		color: rgb(200, 200, 200);
+		color: #91B694;
 	}
 	.maincontent_container {
 		width:650px;
@@ -369,3 +390,72 @@ li p {
 	}
 }
 
+.screen {
+	width: 80%;
+	height: 200px;
+	background-color: lightgrey;
+	border: 1px solid black;
+	padding:1px;
+	margin:auto;
+}
+.orange {
+	height: 25px;
+	width: 80%;
+	background-color: rgb(235, 60, 0);
+	border: 1px solid black;
+	margin: 1px;
+}
+.green {
+	background-color: rgb(64, 191, 75);
+	height: 40px;
+	width: 20%;
+	border: 1px solid black;
+	margin: 1px;
+}
+.dark_orange {
+	background-color: #A45E46;
+	height: 30px;
+	width:80%;
+	border: 1px solid black;
+	margin: 1px;
+}
+.light_green {
+	background-color: #91B694;
+	height:80px;
+	width:100%;
+	border: 1px solid black;
+	margin: 1px;
+	color: black;
+	font-size: 0.7em ;
+}
+.relative .green {
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+.absolute .green {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.absolute2 .light_green {
+	position:relative;
+}
+.absolute {
+	position: relative
+}
+
+.floatleft .green {
+	float:left;
+}
+
+.floatright .green {
+	float:right;
+}
+
+
+pre {
+	border: 1px dashed #91B694;
+	width: 80%;
+	margin: auto;
+}
