@@ -1,6 +1,6 @@
 ---
 title:  "Understanding CSS floats and relative/absolute position"
-index_image: "https://css-tricks.com/wp-content/csstricks-uploads/web-text-wrap.png"
+index_image: "assets/float_web_layout.jpg"
 ---
 
 CSS allows us to position elements on a page in a variety of ways. This allows the design of our page to complement the content and make it easy to read.
