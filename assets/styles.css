@@ -304,6 +304,12 @@ li p {
 	align-items: center;
 }
 
+figure img, figcaption {
+    display: block;
+    width: 60%;
+    margin:auto;
+}
+
 @media (min-width: 450px) {
 	.about_image {
 		background-position-y: 50%;
