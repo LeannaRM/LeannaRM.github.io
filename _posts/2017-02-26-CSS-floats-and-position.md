@@ -108,4 +108,26 @@ We could also `float:right`.
 	<div class="dark_orange"></div>
 </div>
 
+As you can see above, the text flows around the floated div. A major distinction between absolute positioning and position with float is that an absolute positioned element is removed from the flow of the page where a floated element remains in the flow of the page. In other words, the position of elements following the floated element depend on it. So, changing the size of a floated element will affect the position of the following elements.
 
+As mentioned, all of the following elements will flow around a floated element, often we do not want this. In order to stop this flow, we use a method called *clearing the float*. We are able to add the property of `clear` and typically we use the attribute of `both` although `right` and `left` could also be used. When an element is cleared, it will no longer flow around the floated element but sit underneath it.
+
+The dark orange div is not cleared.
+
+<div class="screen floatnoclear">
+	<div class="orange"></div>
+	<div class="green"></div>
+	<div class="light_green">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie pretium tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ac nibh eu augue luctus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, massa sed blandit suscipit, elit dui commodo nisi, et consequat nibh lacus ac dolor.</div>
+	<div class="dark_orange"></div>
+</div>
+
+When we add `clear:both` to the dark orange div the flow changes.
+
+<div class="screen floatclear">
+	<div class="orange"></div>
+	<div class="green"></div>
+	<div class="light_green">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie pretium tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ac nibh eu augue luctus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, massa sed blandit suscipit, elit dui commodo nisi, et consequat nibh lacus ac dolor.</div>
+	<div class="dark_orange"></div>
+</div>
+
+Floats are an excellent choice for positioning elements when you would like following elements to flow around it.
