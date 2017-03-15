@@ -28,7 +28,7 @@ padding: 0;
 	margin: 2px 45px;
 }
 .hamburger_container:hover {
-	border-color: red;
+	border-color: #ff0064;
 	cursor:pointer;
 }
 .name {
@@ -45,7 +45,7 @@ padding: 0;
     font-size: 9pt;
     letter-spacing: 2px;
     /*color: rgb(170, 170, 170);*/
-    color: #D4A99B;
+    color: #2ac4e5;
     margin: 0;
 }
 
@@ -84,14 +84,14 @@ padding: 0;
 .fa-github {
 	font-size: 23px !important;
 	/*color: rgb(170, 170, 170);*/
-	color:#66996A;
+	color:#ff0064;
 }
 .icon_container_git {
 	background-color: rgb(230,230,230);
 }
 .icon_container_twitter, .icon_container_rss {
 	/*background-color: rgb(170, 170, 170);*/
-	background-color: #66996A;
+	background-color: #ff0064;
 }
 
 .icon_container_twitter:hover {
@@ -110,13 +110,13 @@ padding: 0;
 .links {
 	/*color:rgb(120, 120, 120);*/
 	/*color: #521400;*/
-	color: #A45E46;
+	color: #1f91aa;
 	font-size: 9pt;
 	margin: 10px 15px 10px 0;
 	float:right;
 }
 .links:hover, .title_articlelist:hover{
-	color:rgb(235, 60, 0);
+	color: #ff0064;
 }
 
 .container {
@@ -142,8 +142,8 @@ padding: 0;
 
 hr {
 	/*background-color: rgb(230, 230, 230);*/
-	background-color: rgba(64, 191, 75, 0.5);
-	height:1px;
+	background-color: #ffec32;
+	height:2px;
 	border-style: none;
 }
 
@@ -165,7 +165,7 @@ li p {
     letter-spacing: 3px;
     margin: 35px 0 20px 0;
     font-weight: 400;
-    color: #91B694;
+    color: #1f91aa;
 }
 
 .date {
@@ -181,7 +181,7 @@ li p {
 
 .title {
 	/*color: rgb(64, 64, 64);*/
-	color: #A45E46;
+	color: #1f91aa;
     font-weight: 400;
     font-size: 20pt;
     margin: 25px 0 15px 0;
@@ -268,12 +268,12 @@ li p {
 	font-weight: 400;
 }
 .about_image {
-	background-image: url("./aboutphoto.jpg");
+	background-image: url("./sunflower.jpg");
 	padding-top: 75%;
 }
 .hero_image {
-	background-image: url("./notredame.jpg");
-    padding-top: 66.6504%;
+	background-image: url("./landscape_field.jpg");
+    padding-top: 75%;
 }
 .hero_image, .about_image{
 	background-position: center center;
@@ -289,7 +289,7 @@ li p {
     height: 200px;
     float: left;
     margin-right: 10px;
-    border: 1px solid rgba(64, 191, 75, 0.5);
+    border: 2px solid #ffec32;
 }
 .index_image {
 	width: 180px;
@@ -310,17 +310,15 @@ figure img, figcaption {
     margin:auto;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 425px) {
 	.about_image {
-		background-position-y: 50%;
-		height: 337.5px;
+		background-position-y: 30%;
+		height: 318.75px;
 		padding-top: 0;
 	}
-}
-@media (min-width: 570px) {
 	.hero_image {
-		background-position-y: 45%;
-		height: 379.907px;
+		background-position-y: 55%;
+		height: 318.75px;
 		padding-top: 0;
 	}
 }
@@ -362,7 +360,7 @@ figure img, figcaption {
 		font-weight: 400;
     	letter-spacing: 0.5px;
     	/*color: rgb(120,120,120);*/
-    	color: #A45E46;
+    	color: #2ac4e5;
 	}
 	.name_title {
 		font-weight: 400;
@@ -403,26 +401,26 @@ figure img, figcaption {
 .orange {
 	height: 25px;
 	width: 80%;
-	background-color: rgb(235, 60, 0);
+	background-color: rgb(255, 120, 0);
 	border: 1px solid black;
 	margin: 1px;
 }
-.green {
-	background-color: rgb(64, 191, 75);
+.blue {
+	background-color: #1f91aa;
 	height: 40px;
 	width: 20%;
 	border: 1px solid black;
 	margin: 1px;
 }
-.dark_orange {
-	background-color: #A45E46;
+.magenta {
+	background-color: #ff0064;
 	height: 30px;
 	width:80%;
 	border: 1px solid black;
 	margin: 1px;
 }
-.light_green {
-	background-color: #91B694;
+.yellow {
+	background-color: #ffec32;
 	height:80px;
 	width:100%;
 	border: 1px solid black;
@@ -430,41 +428,41 @@ figure img, figcaption {
 	color: black;
 	font-size: 0.75em ;
 }
-.relative .green {
+.relative .blue {
 	position: relative;
 	top: 10px;
 	left: 10px;
 }
-.absolute .green {
+.absolute .blue {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
-.absolute2 .light_green {
+.absolute2 .yellow {
 	position:relative;
 }
 .absolute {
 	position: relative
 }
 
-.floatleft .green {
+.floatleft .blue {
 	float:left;
 }
 
-.floatright .green {
+.floatright .blue {
 	float:right;
 }
-.floatclear .green {
+.floatclear .blue {
 	height: 120px;
 	width: 15%;
 	float:left;
 }
-.floatnoclear .green {
+.floatnoclear .blue {
 	height: 120px;
 	width: 15%;
 	float:left;
 }
-.floatclear .dark_orange {
+.floatclear .magenta {
 	clear:both;
 }
 
