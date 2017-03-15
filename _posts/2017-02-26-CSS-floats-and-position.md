@@ -117,7 +117,7 @@ The magenta div is not cleared.
 <div class="screen floatnoclear">
 	<div class="orange"></div>
 	<div class="blue"></div>
-	<div class="lyellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie pretium tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ac nibh eu augue luctus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, massa sed blandit suscipit, elit dui commodo nisi, et consequat nibh lacus ac dolor.</div>
+	<div class="yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie pretium tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ac nibh eu augue luctus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, massa sed blandit suscipit, elit dui commodo nisi, et consequat nibh lacus ac dolor.</div>
 	<div class="magenta"></div>
 </div>
 

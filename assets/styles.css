@@ -44,8 +44,7 @@ padding: 0;
     font-weight: 300;
     font-size: 9pt;
     letter-spacing: 2px;
-    /*color: rgb(170, 170, 170);*/
-    color: #2ac4e5;
+    color: rgb(170, 170, 170);
     margin: 0;
 }
 
@@ -84,14 +83,14 @@ padding: 0;
 .fa-github {
 	font-size: 23px !important;
 	/*color: rgb(170, 170, 170);*/
-	color:#ff0064;
+	color:#3ea2b9;
 }
 .icon_container_git {
 	background-color: rgb(230,230,230);
 }
 .icon_container_twitter, .icon_container_rss {
 	/*background-color: rgb(170, 170, 170);*/
-	background-color: #ff0064;
+	background-color: #3ea2b9;
 }
 
 .icon_container_twitter:hover {
@@ -143,7 +142,7 @@ padding: 0;
 hr {
 	/*background-color: rgb(230, 230, 230);*/
 	background-color: #ffec32;
-	height:2px;
+	height:1px;
 	border-style: none;
 }
 
@@ -173,6 +172,7 @@ li p {
     font-weight: 300;
     margin: 0 0 25px 0;
     letter-spacing: 1px;
+    color: #3ea2b9;
 }
 .date_list {
 	font-size: 8.5pt;
@@ -289,7 +289,7 @@ li p {
     height: 200px;
     float: left;
     margin-right: 10px;
-    border: 2px solid #ffec32;
+    border: 1px solid #ffec32;
 }
 .index_image {
 	width: 180px;
@@ -360,23 +360,24 @@ figure img, figcaption {
 		font-weight: 400;
     	letter-spacing: 0.5px;
     	/*color: rgb(120,120,120);*/
-    	color: #2ac4e5;
+    	color: #1f91aa;
 	}
 	.name_title {
 		font-weight: 400;
     	font-size: 8pt;
     	letter-spacing: 0.5px;
+    	color: #3ea2b9;
 	}
 	.links {
 		font-weight: 500;
 	}
 	.icon_container_twitter, .icon_container_rss {
 		/*background-color: rgb(200, 200, 200);*/
-		background-color: #91B694;
+		/*background-color: #91B694;*/
 	}
 	.fa-github {
-		color: rgb(200, 200, 200);
-		color: #91B694;
+		/*color: rgb(200, 200, 200);*/
+		/*color: #91B694;*/
 	}
 	.maincontent_container {
 		width:650px;
@@ -467,7 +468,7 @@ figure img, figcaption {
 }
 
 pre {
-	border: 1px dashed #91B694;
+	border: 1px dashed #176d7f;
 	width: 80%;
 	margin: auto;
 }
