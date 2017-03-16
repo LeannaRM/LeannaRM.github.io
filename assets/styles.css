@@ -277,8 +277,8 @@ li p {
 	padding-top: 62.86%;
 }
 .hero_image {
-	background-image: url("./sunflower2.jpg");
-    padding-top: 66.418%;
+	background-image: url("./omaha-street.jpg");
+    padding-top: 66.654%;
 }
 .hero_image, .about_image{
 	background-position: center center;
@@ -317,13 +317,13 @@ figure img, figcaption {
 
 @media (min-width: 500px) {
 	.about_image {
-		background-position-y: 40%;
+		background-position-y: 45%;
 		height: 314.318px;
 		padding-top: 0;
 	}
 	.hero_image {
-		background-position-y: 40%;
-		height: 332.09px;
+		background-position-y: 42%;
+		height: 333.272px;
 		padding-top: 0;
 	}
 }
