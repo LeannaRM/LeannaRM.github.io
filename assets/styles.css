@@ -222,7 +222,7 @@ li p {
 	line-height: 100%;
 }
 .postcontent_container p:last-of-type {
-	margin: 0px 0 5px 0;;
+	margin: 1em 0 2em 0;
 }
 .maincontent_aboutlinks {
 	padding: 0;
@@ -249,6 +249,7 @@ li p {
 .twittershare_container {
 	padding:20px;
 	background-color: rgb(230, 230, 230);
+	margin-bottom: 15px;
 }
 .twittershare_bird {
 	color: #1da1f2;
@@ -476,4 +477,9 @@ pre {
 	border: 1px dashed #176d7f;
 	width: 80%;
 	margin: auto;
+	background-color: rgb(240,240,240);
+    padding: 10px;
+}
+code {
+	background-color: rgb(240,240,240);
 }
