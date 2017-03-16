@@ -1,5 +1,5 @@
 ---
-title:  "Lorem Ipsum"
+title:  "DOM events"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
