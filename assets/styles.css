@@ -273,12 +273,12 @@ li p {
 	font-weight: 400;
 }
 .about_image {
-	background-image: url("./sunflower.jpg");
-	padding-top: 75%;
+	background-image: url("./notre-dame.jpg");
+	padding-top: 62.86%;
 }
 .hero_image {
-	background-image: url("./landscape_field.jpg");
-    padding-top: 75%;
+	background-image: url("./sunflower2.jpg");
+    padding-top: 66.418%;
 }
 .hero_image, .about_image{
 	background-position: center center;
@@ -315,15 +315,15 @@ figure img, figcaption {
     margin:auto;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 500px) {
 	.about_image {
-		background-position-y: 30%;
-		height: 318.75px;
+		background-position-y: 40%;
+		height: 314.318px;
 		padding-top: 0;
 	}
 	.hero_image {
-		background-position-y: 55%;
-		height: 318.75px;
+		background-position-y: 40%;
+		height: 332.09px;
 		padding-top: 0;
 	}
 }
