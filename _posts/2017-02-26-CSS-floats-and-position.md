@@ -11,7 +11,7 @@ Traditional positioning in CSS has many properties and we will describe each:
 3. Absolute
 4. Fixed
 
-Additionally, an element can be given the float property. At the end of this tutorial we will describe the position and properties of float elements.
+Additionally, an element can be given the float property. At the end of this tutorial, we will describe the position and properties of float elements.
 
 ### Static Position
 
