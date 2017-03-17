@@ -5,17 +5,17 @@ index_image: "assets/float_web_layout.jpg"
 
 CSS allows us to position elements on a page in a variety of ways. This allows the design of our page to complement the content and make it easy to read.
 
-Positioning in CSS has many properties and we will describe each:
+Traditional positioning in CSS has many properties and we will describe each:
 1. Static
 2. Relative
 3. Absolute
 4. Fixed
 
-Additionally, an element can be given the float property. At the end we will describe the position and properties of float elements.
+Additionally, an element can be given the float property. At the end of this tutorial we will describe the position and properties of float elements.
 
 ### Static Position
 
-The default position of any element on the page will be static. it is as if everything stacks on top of each other, filling the page vertically downward. 
+The default position of any element on the page will be static. The flow of the elements is as if everything stacks on top of each other, filling the page vertically downward. 
 
 <div class="screen static">
 	<div class="orange"></div>
@@ -28,14 +28,14 @@ As you can see above, the elements stack on top of one another no matter what th
 
 ### Relative Position
 
-Relative positioning is typically used for small movements away from the static position. You can set an element's position to relative using `position: relative`. If nothing else is noted the position of the element will be exactly the static position. Otherwise if you would like it moved you can specify movement from the top, right, bottom, or left. The amount the element moves will be **relative to the static position**. For example, lets move the blue div using relative positioning.
-```
-.blue {
-	position: relative;
-	top: 10px;
-	left: 10px;
-}
-```
+Relative positioning is typically used for small movements away from the static position. Set an element's position to relative using `position: relative`. If nothing else is noted, the position of the element will be exactly the same as the static position. It will be like nothing happened! Likely, you will want to move the element which can be specified movement from the top, right, bottom, or left. The amount the element moves will be **relative to the static position**. For example, let's move the blue div using relative positioning.
+
+	.blue {
+		position: relative;
+		top: 10px;
+		left: 10px;
+	}
+
 We would like the blue div to move 10px lower and 10px to the right.
 
 <div class="screen relative">
