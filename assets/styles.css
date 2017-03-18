@@ -17,6 +17,19 @@ color: rgb(100,100,100);
 	z-index:2;
 	position: relative;
 }
+.footer {
+	background-color: rgb(64, 64, 64);
+	color: rgb(230,230,230);
+	padding: 3px;
+	margin:20px 0 0 0 ;
+	width:100%;
+	display:flex;
+	justify-content: flex-end;
+}
+.footer p {
+	font-size: 9px;
+	margin-right: 20px;
+}
 
 .fa-bars {
 	font-size: 20px !important;
@@ -115,7 +128,7 @@ color: rgb(100,100,100);
 	margin: 10px 15px 10px 0;
 	float:right;
 }
-.links:hover, .title_articlelist:hover{
+.links:hover, .title_articlelist:hover, .name:hover{
 	color: #ff0064;
 }
 
@@ -416,7 +429,7 @@ code {
 	}
 }
 @media (min-width: 650px) {
-	.header {
+	.header, .footer {
 		background-color: rgb(230,230,230);
 		color: rgb(64, 64, 64);
 	}
@@ -460,6 +473,9 @@ code {
     	font-size: 8pt;
     	letter-spacing: 0.5px;
     	color: #3ea2b9;
+	}
+	.footer p{
+		color: #1f91aa;
 	}
 	.links {
 		font-weight: 500;

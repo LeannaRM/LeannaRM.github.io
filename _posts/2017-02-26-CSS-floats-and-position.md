@@ -84,9 +84,9 @@ Now, instead of the div appearing in the bottom right corner of the screen, it a
 
 Our last position property is fixed positioning. This is exactly like absolute positioning except the element stays in view in the same position when the screen is scrolled. Another way to describe this is that the fixed element will be contained within the viewport.
 
-<a>Click here</a> to make the blue div position fixed.
+<!-- <a class="fixed">Click here</a> to make the blue div position fixed.
 
-When you get tired of having it stick around, <a>click here</a> to turn it back to absolute positioning.
+When you get tired of having it stick around, <a class="unfixed">click here</a> to turn it back to absolute positioning. -->
 
 ### Float
 

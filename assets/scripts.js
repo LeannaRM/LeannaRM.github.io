@@ -12,5 +12,21 @@ window.addEventListener("load", function (){
 		};
 	};
 
+	// fixed = document.getElementsByClassName("fixed")[0]
+	// unfixed = document.getElementsByClassName("unfixed")[0]
+	// fixed.addEventListener("click",makeFixed);
+	// unfixed.addEventListener("click",makeAbsolute);
+
+	// function makeFixed(e) {
+	// 	bluediv = document.getElementsByClassName("absolute2")[0].children[1].children[0]
+	// 	bluediv.style.position = "fixed";
+	// 	debugger;
+	// }
+
+	// function makeAbsolute(e) {
+	// 	bluediv = document.getElementsByClassName("absolute2")[0].children[1].children[0]
+	// 	bluediv.style.position = "absolute";
+	// }
+
 
 });
