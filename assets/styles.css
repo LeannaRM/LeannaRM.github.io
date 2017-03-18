@@ -348,11 +348,12 @@ figure img, figcaption {
 .yellow {
 	background-color: #ffec32;
 	height:80px;
-	width:100%;
+	width:90%;
 	border: 1px solid black;
 	margin: 1px;
 	color: black;
 	font-size: 0.55em;
+	padding: 5px;
 }
 .relative .blue {
 	position: relative;
@@ -373,20 +374,19 @@ figure img, figcaption {
 
 .floatleft .blue {
 	float:left;
+	margin-right: 2px;
 }
 
 .floatright .blue {
 	float:right;
 }
 .floatclear .blue {
-	height: 120px;
+	height: 130px;
 	width: 15%;
-	float:left;
 }
 .floatnoclear .blue {
-	height: 120px;
+	height: 130px;
 	width: 15%;
-	float:left;
 }
 .floatclear .magenta {
 	clear:both;

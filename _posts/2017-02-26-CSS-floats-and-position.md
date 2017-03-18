@@ -50,13 +50,13 @@ As you can see above, the blue div has moved while all the others have remained 
 ### Absolute Position
 
 Absolute positioning functions completely different than relative positioning. The first difference is that the position that is specified is no longer relative to the static position, it is relative to the page. Therefore, it is good practice to always specify the location usually either top and left or bottom and right. Let's say I would like to position the blue div in the bottom right corner. 
-```
-.blue {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-```
+
+	.blue {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
 We would add to our css file the position of 0 for bottom and right along with the position absolute.
 
 <div class="screen absolute">
@@ -68,7 +68,7 @@ We would add to our css file the position of 0 for bottom and right along with t
 
 As you can tell, our box is now on the bottom right corner of our "screen". The second major difference is now apparent. Setting position absolute removes the element from the flow of the page. All the other elements now act as if the blue div does not exist, their static positions are shifted.
 
-An additional quality of absolute positioning is that if a parent is relative positioned instead of static, the absolute positioned div will position itself in relation to the relatively positioned parent instead of the page. For example, consider the affect of the blue div being a child of the yellow div while the yellow div is position relative.
+An additional quality of absolute positioning is that if a parent is relative positioned instead of static, the absolute positioned div will be in relation to the relatively positioned parent instead of the page. For example, consider the affect of the blue div being a child of the yellow div while the yellow div is position relative.
 
 <div class="screen absolute absolute2">
 	<div class="orange"></div>
@@ -82,7 +82,11 @@ Now, instead of the div appearing in the bottom right corner of the screen, it a
 
 ### Fixed Position
 
-Our last position property is fixed positioning. this is exactly like absolute positioning except the element stays in view in the same position when the screen is scrolled. Another way to describe this is that the fixed element will be contained within the viewport.
+Our last position property is fixed positioning. This is exactly like absolute positioning except the element stays in view in the same position when the screen is scrolled. Another way to describe this is that the fixed element will be contained within the viewport.
+
+<a>Click here</a> to make the blue div position fixed.
+
+When you get tired of having it stick around, <a>click here</a> to turn it back to absolute positioning.
 
 ### Float
 
@@ -114,7 +118,7 @@ As mentioned, all of the following elements will flow around a floated element, 
 
 The magenta div is not cleared.
 
-<div class="screen floatnoclear">
+<div class="screen floatleft floatnoclear">
 	<div class="orange"></div>
 	<div class="blue"></div>
 	<div class="yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie pretium tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ac nibh eu augue luctus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, massa sed blandit suscipit, elit dui commodo nisi, et consequat nibh lacus ac dolor.</div>
@@ -123,7 +127,7 @@ The magenta div is not cleared.
 
 When we add `clear:both` to the magenta div the flow changes.
 
-<div class="screen floatclear">
+<div class="screen floatleft floatclear">
 	<div class="orange"></div>
 	<div class="blue"></div>
 	<div class="yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie pretium tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ac nibh eu augue luctus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, massa sed blandit suscipit, elit dui commodo nisi, et consequat nibh lacus ac dolor.</div>
