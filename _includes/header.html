@@ -1,44 +1,42 @@
 <header>
-  <div class=header>
-    <div class="hamburger_container">
-      <span class="fa fa-bars" aria-hidden="true"></span>
-    </div>
-    <h1 class=name><a href="/">{{ site.title }}</a></h1>
-    <h2 class=name_title>{{ site.blurb }}</h2>
-    <div class="cleardiv"></div>
-  </div>
-
-  <div class="navbar">
-    <div class="container">
-      <div class="icons_container">
-        <a href="https://twitter.com/leannarmcdonald" class="icon_link">
-          <div class="icon_container_twitter">
-            <span class="fa fa-twitter"></span>
-          </div>
-        </a>
-
-        <a href="https://github.com/LeannaRM" class="icon_link">
-          <div class="icon_container_git">
-            <span class="fa fa-github"></span>
-          </div>
-        </a>
-
-        <a href="#" class="icon_link">
-          <div class="icon_container_rss">
-            <span class="fa fa-rss"></span>
-          </div>
-        </a>
+    <div class=header>
+        <div class="hamburger_container">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </div>
+        <h1 class=name><a href="/">{{ site.title }}</a></h1>
+        <h2 class=name_title>{{ site.blurb }}</h2>
         <div class="cleardiv"></div>
-      </div>
-
-      <div class="links_container">
-        {% for the_page in site.pages %}
-          {% if the_page.title %}
-            <a href="{{ the_page.url }}" class="links">{{ the_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-        <div class="cleardiv"></div>
-      </div>
     </div>
-  </div>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="icons_container">
+                <a href="https://twitter.com/leannarmcdonald" class="icon_link">
+                    <div class="icon_container_twitter">
+                        <span class="fa fa-twitter"></span>
+                    </div>
+                </a>
+                <a href="https://github.com/LeannaRM" class="icon_link">
+                    <div class="icon_container_git">
+                        <span class="fa fa-github"></span>
+                    </div>
+                </a>
+                <a href="#" class="icon_link">
+                    <div class="icon_container_rss">
+                        <span class="fa fa-rss"></span>
+                    </div>
+                </a>
+                <div class="cleardiv"></div>
+            </div>
+
+            <div class="links_container">
+                {% for the_page in site.pages %}
+                    {% if the_page.title %}
+                        <a href="{{ the_page.url }}" class="links">{{ the_page.title }}</a>
+                    {% endif %}
+                {% endfor %}
+                <div class="cleardiv"></div>
+            </div>
+        </div>
+    </div>
 </header>
