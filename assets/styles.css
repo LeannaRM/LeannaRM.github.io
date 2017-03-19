@@ -8,27 +8,18 @@ color: rgb(100,100,100);
 	text-transform: uppercase;
 }
 
-.header {
+header {
 	background-color: rgb(64, 64, 64);
-	color: rgb(230,230,230);
-	padding: 25px;
+	padding: 25px 0;
 	margin:0;
 	width:100%;
-	z-index:2;
-	position: relative;
 }
-.footer {
-	background-color: rgb(64, 64, 64);
-	color: rgb(230,230,230);
-	padding: 3px;
-	margin:20px 0 0 0 ;
-	width:100%;
-	display:flex;
-	justify-content: flex-end;
-}
-.footer p {
-	font-size: 9px;
-	margin-right: 20px;
+.header_container {
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
 }
 
 .fa-bars {
@@ -37,31 +28,9 @@ color: rgb(100,100,100);
 .hamburger_container {
 	border: 2px solid rgb(230,230,230);;
 	border-radius: 5px;
-	float:right;
 	padding:5px;
 	margin: 2px 45px;
 }
-.hamburger_container:hover {
-	border-color: #ff0064;
-	cursor:pointer;
-}
-.name {
-    font-size: 13pt;
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin: 0;
-}
-.name a {
-    text-decoration:none;
-}
-.name_title {
-    font-weight: 300;
-    font-size: 9pt;
-    letter-spacing: 2px;
-    color: rgb(170, 170, 170);
-    margin: 0;
-}
-
 
 .navbar {
 	background-color:rgb(230,230,230);
@@ -91,22 +60,54 @@ color: rgb(100,100,100);
     align-items: center;
     justify-content: center;
 }
-.icon_link {
-	float:left;
-}
+
 .fa-github {
 	font-size: 23px !important;
-	/*color: rgb(170, 170, 170);*/
 	color:#3ea2b9;
 }
 .icon_container_git {
 	background-color: rgb(230,230,230);
 }
 .icon_container_twitter, .icon_container_rss {
-	/*background-color: rgb(170, 170, 170);*/
 	background-color: #3ea2b9;
 }
+.icons_container, .links_container{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
+
+.name {
+    font-size: 13pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.name_title {
+    font-weight: 300;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: rgb(170, 170, 170);
+    margin: 0;
+}
+
+.links_container a, .name a, .icons_container a {
+	text-decoration: none;
+}
+
+.links {
+	color: #1f91aa;
+	font-size: 9pt;
+	margin: 10px 15px 10px 0;
+}
+
+
+.hamburger_container:hover {
+	border-color: #ff0064;
+	cursor:pointer;
+}
 .icon_container_twitter:hover {
 	background-color: #1da1f2;
 }
@@ -116,45 +117,29 @@ color: rgb(100,100,100);
 .icon_container_rss:hover {
 	background-color: orange;
 }
-
-.navbar .container a {
-	text-decoration: none;
-}
-.links {
-	/*color:rgb(120, 120, 120);*/
-	/*color: #521400;*/
-	color: #1f91aa;
-	font-size: 9pt;
-	margin: 10px 15px 10px 0;
-	float:right;
-}
 .links:hover, .title_articlelist:hover, .name:hover{
 	color: #ff0064;
 }
 
-.container {
+.footer {
+	background-color: rgb(64, 64, 64);
+	color: rgb(230,230,230);
+	padding: 3px;
+	margin:20px 0 0 0 ;
 	width:100%;
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.icons_container, .links_container{
 	display:flex;
-	align-items: center;
+	justify-content: flex-end;
 }
-
-
-.cleardiv {
-	clear:both;
+.footer p {
+	font-size: 9px;
+	margin-right: 20px;
 }
 
 .maincontent_container {
-	/*color: rgb(170, 170, 170);*/
 	margin: 15px;
 }
 
 hr {
-	/*background-color: rgb(230, 230, 230);*/
 	background-color: #ffec32;
 	height:1px;
 	border-style: none;
@@ -194,7 +179,6 @@ li p {
 }
 
 .title {
-	/*color: rgb(64, 64, 64);*/
 	color: #1f91aa;
     font-weight: 400;
     font-size: 20pt;
@@ -221,11 +205,9 @@ li p {
     font-size: 11.5pt;
     font-weight: 300;
     margin: 0;
-/*    color: rgb(64, 64, 64);*/
     letter-spacing: 0.5px;
     line-height: 150%;
     padding: 10px 0 10px 0;
-/*    z-index: -2;*/
 }
 
 .postcontent_container h3 {
@@ -251,7 +233,6 @@ li p {
 }
 .maincontent_intro {
 	margin: 5px 0 25px 0;
-    /*color: rgb(170,170,170);*/
     font-size: 10pt;
 }
 .maincontent_footnote {
@@ -416,6 +397,12 @@ code {
 	background-color: rgb(240,240,240);
 }
 
+@media (min-width: 920px) {
+	.header_container {
+		width: 900px;
+	}
+}
+
 @media (min-width: 500px) {
 	.about_image {
 		background-position-y: 45%;
@@ -429,7 +416,7 @@ code {
 	}
 }
 @media (min-width: 650px) {
-	.header, .footer {
+	header, .footer {
 		background-color: rgb(230,230,230);
 		color: rgb(64, 64, 64);
 	}
@@ -443,10 +430,6 @@ code {
 		text-align: center;
 		transition:none;
 	}
-	.icons_container {
-		float:none;
-		display:block;
-	}
 	.icon_link {
 		display: inline-block;
 		float:none;
@@ -456,16 +439,9 @@ code {
 	.container {
 		display:block;
 	}
-	.links_container {
-		position: absolute;
-		right:0;
-		top:20px;
-	}
-
 	.name {
 		font-weight: 400;
     	letter-spacing: 0.5px;
-    	/*color: rgb(120,120,120);*/
     	color: #1f91aa;
 	}
 	.name_title {
