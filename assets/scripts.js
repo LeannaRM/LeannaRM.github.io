@@ -2,15 +2,24 @@ window.addEventListener("load", function (){
 
 	trigger = document.getElementsByClassName("hamburger_container")[0];
 	trigger.addEventListener("click",showLinks);
+	nav = document.getElementsByClassName("navbar")[0];
+	nav.addEventListener("transitionend",fixZindex);
 
 	function showLinks() {
-		nav = document.getElementsByClassName("navbar")[0];
+		
 		if (nav.classList.contains("showlinks")) {
+			nav.classList.remove("posZindex");
 			nav.classList.remove('showlinks');
 		} else {
 			nav.classList.add('showlinks');
 		};
 	};
+
+	function fixZindex() {
+		if (nav.classList.contains("showlinks")) {
+			nav.classList.add('posZindex');
+		} 
+	}
 
 	let element = document.getElementById("slidingMenu");
 element.addEventListener("transitionend", function(event) {

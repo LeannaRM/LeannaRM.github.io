@@ -48,6 +48,9 @@ header {
 .showlinks {
 	top: 72px;
 }
+.posZindex {
+	z-index: 1;
+}
 
 .fa {
 	color:rgb(230,230,230);
