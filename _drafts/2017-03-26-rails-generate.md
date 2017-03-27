@@ -33,7 +33,9 @@ We can see that in order to generate a model with rails we first of all need a n
 
 Then the magic happens.
 
-	
+	<script src="https://gist.github.com/LeannaRM/ccdb2aaf1b8c7b467139147167c63068.js"></script>
+
+We'll quickly go through each of the step that have happened. On line 2,
 
 ### Generate Controller
 
