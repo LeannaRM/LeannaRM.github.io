@@ -35,9 +35,17 @@ Then the magic happens.
 
 	<script src="https://gist.github.com/LeannaRM/ccdb2aaf1b8c7b467139147167c63068.js"></script>
 
-We'll quickly go through each of the step that have happened. On line 2,
+We'll quickly go through each of the step that have happened. On line 2, generate creates a migration file. This file is used to tell the database what changes to make when we subsequently run ```rake db:migrate```. Next rails generate creates the user model file, the user model test file and a yml file.
+
+To summarizes, ```rails generate model``` creates
+- migration
+- model
+- model test
+
 
 ### Generate Controller
+Next we'll 
+
 
 
 ### Generate Scaffold
