@@ -1,5 +1,6 @@
 ---
 title:  "Demystifying Rails Generate"
+index_image: "assets/rails-logo.jpg"
 ---
 
 Rails allows users to easily create many files with the generate command. Utilizing this command saves users lots of time by using templates to create files and code.
