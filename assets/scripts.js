@@ -21,11 +21,6 @@ window.addEventListener("load", function (){
 		} 
 	}
 
-	let element = document.getElementById("slidingMenu");
-element.addEventListener("transitionend", function(event) {
-  element.innerHTML = "Done!";
-}, false);
-
 	// fixed = document.getElementsByClassName("fixed")[0]
 	// unfixed = document.getElementsByClassName("unfixed")[0]
 	// fixed.addEventListener("click",makeFixed);
