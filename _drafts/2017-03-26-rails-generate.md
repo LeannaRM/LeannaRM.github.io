@@ -45,9 +45,27 @@ To summarizes, ```rails generate model``` creates
 
 
 ### Generate Controller
-Next we'll 
+Next we'll dive into ```rails generate controller``` where the syntax is very similar to generate model
+
+	rails generate controller NAME [action action] [options]
+
+The major difference is when we generate a model we would like to include the fields in that model where when we create a controller we would like to include the actions of that controller.
+
+	rails generate controller User
+
+The magic happens
+
+	<script src="https://gist.github.com/LeannaRM/e13a86ae11dfd1aa3532b2286f50e525.js"></script>
+
 
 
 
 ### Generate Scaffold
 
+
+
+rails generate scaffold User2 name:text email:text
+
+The magic: 
+
+	<script src="https://gist.github.com/LeannaRM/9a2b7bdd73c2788ecaf04d00f1d04a33.js"></script>
