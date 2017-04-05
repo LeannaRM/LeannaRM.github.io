@@ -7,6 +7,31 @@ color: rgb(100,100,100);
 
 img {
 	width: 200px;
-	float:right;
 }
 
+.main_container {
+	width: 800px;
+	margin: auto;
+}
+
+.intro_container, .about_container {
+	background-color: #FFF7BD;
+	display:flex;
+	justify-content: space-between;
+	padding:35px 50px;
+	margin: 20px auto;
+}
+
+.intro_container {
+	align-items: center;
+}
+
+.about_container {
+	align-items: flex-start;
+}
+
+.aboutme_container, .aboutyou_container {
+	margin: 20px;
+	padding: 10px;
+	background-color: #95CFB7;
+}
