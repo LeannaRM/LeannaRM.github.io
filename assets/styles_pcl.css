@@ -14,7 +14,7 @@ img {
 	margin: auto;
 }
 
-.intro_container, .about_container, .projects_container {
+.intro_container, .about_container {
 	background-color: #FFF7BD;
 	display:flex;
 	justify-content: space-between;
@@ -31,6 +31,14 @@ img {
 }
 
 .projects_container {
+	padding:35px 50px;
+	margin: 20px auto;
+	background-color: #FFF7BD;
+}
+
+.inner_projects_container {
+	display:flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -44,4 +52,20 @@ img {
 	width: 300px;
 	height: 500px;
 	margin: 15px;
+}
+
+.testimonial_container {
+	background-color: #FFF7BD;
+	padding:35px 50px;
+	margin: 20px auto;
+}
+
+.testimonial {
+	margin: 20px;
+	padding: 10px;
+	background-color: #95CFB7;
+}
+.testimonial em {
+	position: relative;
+	left: 400px;
 }
