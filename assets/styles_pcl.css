@@ -5,7 +5,7 @@ padding: 0;
 color: rgb(100,100,100);	
 }
 
-img {
+.intro_container img {
 	width: 200px;
 }
 
@@ -14,7 +14,7 @@ img {
 	margin: auto;
 }
 
-.intro_container, .about_container {
+.intro_container, .about_container, .contact_container {
 	background-color: #FFF7BD;
 	display:flex;
 	justify-content: space-between;
@@ -28,6 +28,11 @@ img {
 
 .about_container {
 	align-items: flex-start;
+}
+
+.contact_container {
+	align-items: center;
+	margin: 35px 100px; 
 }
 
 .projects_container {
@@ -68,4 +73,8 @@ img {
 .testimonial em {
 	position: relative;
 	left: 400px;
+}
+
+.contact_container img {
+	width: 100px;
 }
