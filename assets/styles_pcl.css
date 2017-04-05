@@ -14,7 +14,7 @@ img {
 	margin: auto;
 }
 
-.intro_container, .about_container {
+.intro_container, .about_container, .projects_container {
 	background-color: #FFF7BD;
 	display:flex;
 	justify-content: space-between;
@@ -30,8 +30,18 @@ img {
 	align-items: flex-start;
 }
 
-.aboutme_container, .aboutyou_container {
+.projects_container {
+	flex-wrap: wrap;
+}
+
+.aboutme_container, .aboutyou_container, .project{
 	margin: 20px;
 	padding: 10px;
 	background-color: #95CFB7;
+}
+
+.project {
+	width: 300px;
+	height: 500px;
+	margin: 15px;
 }
