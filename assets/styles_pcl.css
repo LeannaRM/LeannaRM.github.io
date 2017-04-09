@@ -5,12 +5,34 @@ padding: 0;
 color: rgb(100,100,100);	
 }
 
+header {
+	background-color: #95CFB7;
+}
+
+header div {
+	width:850px;
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px;
+}
+
+header div a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: rgb(100,100,100);
+}
+
+header div a:hover {
+	color: #F2F26F;
+}
+
 .intro_container img {
 	width: 200px;
 }
 
 .main_container {
-	width: 800px;
+	width: 850px;
 	margin: auto;
 }
 
@@ -27,12 +49,12 @@ color: rgb(100,100,100);
 }
 
 .about_container {
-	align-items: flex-start;
+	align-items: stretch;
 }
 
 .contact_container {
 	align-items: center;
-	margin: 35px 100px; 
+	margin: 35px 180px; 
 }
 
 .projects_container {
@@ -48,9 +70,9 @@ color: rgb(100,100,100);
 }
 
 .aboutme_container, .aboutyou_container, .project{
-	margin: 20px;
 	padding: 10px;
 	background-color: #95CFB7;
+	width:45%;
 }
 
 .project {
